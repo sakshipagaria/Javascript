@@ -1,0 +1,63 @@
+h1{
+
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 25px;
+    text-align:center;
+}
+#calcBody{
+
+width: 300px; height: 400px;
+box-sizing: border-box; border: 1px rgb(97, 94, 94) solid;
+background: rgb(31, 32, 34);
+ margin-top: 50px;
+margin-left: 38%; padding: 5px;
+border-radius: 10px;
+
+
+}
+
+#id1{
+
+margin : 5px; margin-bottom:0;
+background-color: rgb(235, 228, 228); height: 40px;
+width: 278px; border: none; text-align: left; font-size: 24px;
+font: bold;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding: 10px;
+box-sizing: border-box;
+
+}
+
+#outputField{
+
+margin : 5px; margin-top:0;
+background-color: rgb(250, 243, 243); text-align: end;
+font-size: 30px; font:italic;
+font-family: Verdana, Geneva, Tahoma, sans-serif; height: 60px;
+padding: 10px;
+box-sizing: border-box;
+
+}
+
+#output{
+
+margin: 0px; font: italic;
+}
+
+.input{
+
+width : 50px; height: 30px; float: left;
+margin: 10px;
+
+}
+
+#inputArea{
+
+margin-top: 25px;
+
+}
+
+.inpbtn{
+
+width: 50px; height: 30px;
+}
