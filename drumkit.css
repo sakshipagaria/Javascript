@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    background-image: url("https://media.istockphoto.com/photos/concert-crowd-picture-id1206732571?k=20&m=1206732571&s=612x612&w=0&h=yQGyg_9cBkadstHLocXu6JT_gqQQ_1zx30fc4ebhWJM=");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:500px;  
+    position: relative;
+    overflow:hidden;
+
+}
+h1{
+    font-size:5rem;
+    text-shadow:3px 0 gray; 
+}
+.button{
+    border-radius:5px;
+    border:5px solid #111111;
+    font-size:2rem;
+    line-height:2;
+    font-weight: 100;
+    color:#050505;
+    text-shadow:#5f0f23;
+    display:inline-block;
+    width:90px;
+    height:90px;
+    background-color:rgb(28, 158, 209) ;
+    margin:10px;
+    text-align: center;
+}
+.all{
+    margin:5% auto;
+}
+.animation{
+    box-shadow:0 3px 4px 0 #dbedf3;
+    opacity:0.5;
+}
