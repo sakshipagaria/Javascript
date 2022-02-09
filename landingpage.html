@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StarBucks Landing page</title>
+        <link rel="stylesheet" href="page.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+
+    </head>
+    <body>
+        <section>
+            <div class ="circle"></div>
+            <header>
+                <a href="" class="logo"><img src="https://logos-world.net/wp-content/uploads/2020/09/Starbucks-Logo.png" width="200px" height="110px"></a>
+                <ul>
+                    <li><a href="#" >Home</a></li>
+                    <li><a href="#" >Menu</a></li>
+                    <li><a href="#" >Whats New</a></li>
+                    <li><a href="#" >Contact</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textbox">
+                    <h2>It's not just Coffee<br>It's <span>STARBUCKS</span></h2>
+               <hr>
+                    <p>The designer who was responsible for designing the first Starbucks logo was Terry Heckler. As an inspiration, he sorted out old marine books and based the two-tailed siren design off of a 16th century Norse woodcut. For many years, this siren was mistaken for being a mermaid, yet it was later confirmed that the symbol was, in fact, a siren. 
+                        However, the 2011 redesign (aka the current Starbucks logo) was created by the collaboration of both Starbucks’ in-house design team and Lippincott, a global brand consultancy agency. 
+                        </p>
+                    <a href ="#">Explore More</a>
+             </div>
+             <div class="imgbox">
+                <img src="https://freepngimg.com/save/77325-frappuccino-drink-chocolate-starbucks-matcha-white/620x899" class="starbucks">
+            </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="https://stories.starbucks.com/uploads/2019/04/SBX20190429-Summer-Menu-Smores-Frappuccino.png" width="130px" height="150px" onclick="imgSlider('https://stories.starbucks.com/uploads/2019/04/SBX20190429-Summer-Menu-Smores-Frappuccino.png');changecircleColor('#DEB887')"></li>
+                <li><img src="https://hitsandmrs.files.wordpress.com/2014/06/strawberry-cheesecake-frappuccinoc2ae-blended-beverage.jpg" width="90px" height="150px" onclick="imgSlider('https://hitsandmrs.files.wordpress.com/2014/06/strawberry-cheesecake-frappuccinoc2ae-blended-beverage.jpg') ;changecircleColor('#DC143C')"></li>
+                <li><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDKtH75U9gz-m_jsPZBNnZkljdVBc3IwxXcGp_M7wTFF_xEHPE" width="130px" height="170px" onclick="imgSlider('https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDKtH75U9gz-m_jsPZBNnZkljdVBc3IwxXcGp_M7wTFF_xEHPE');changecircleColor('#8b4513')"></li>
+            </ul>
+        </section>
+        <script >
+            function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+          }
+            function changecircleColor(color){
+          const circle=document.querySelector('.circle');
+          circle.style.background=color;
+         }
+        </script>
+    </body>
+</html>
