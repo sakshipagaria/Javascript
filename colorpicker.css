@@ -1,0 +1,30 @@
+body{
+    padding:30px;
+    display:grid;
+    place-items: center;
+}
+code{
+    padding:5px;
+    border-radius:10px;
+    background:#f3f9f9;
+    color:crimson;
+}
+[type="color"]{
+    appearance: none;
+    padding:0;
+    width:15px;
+    height:15px;
+    border:none;
+}
+[type='color']::webkit-color-switch-wrapper{
+    padding:0;
+}
+[type="color"]::-webkit-color-switch{
+    border:none;
+}
+.color-picker{
+    padding:10px 15px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    background:#f9f9f9;
+}
