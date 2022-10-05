@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;   
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 100vh;
+    background:linear-gradient(to left, #ef8585,#ffffff );
+    background-size: 200%;
+    animation: gradient 5s ease infinite;
+}
+@keyframes gradient{
+    0%{background-position: 0%;}
+    25%{background-position: 50%;}
+    50%{background-position: 100%;}
+    75%{background-position: 50%;}
+    100%{background-position: 0%;}
+}
+.wrapper{
+    width:450px;
+    background:#fff;
+    border-radius: 10px;
+}
+.wrapper header{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:25px 30px 10px;
+}
+header .current-date{
+    font-size:1.45rem;
+    font-weight:500;
+}
+header .icons span{
+    height:38px;
+    width:38px;
+    margin:0 1px;
+    font-size:1.7rem;
+    cursor:pointer;
+    color:#878787;
+    /*padding:10px 14px;*/
+    text-align:center;
+    border-radius:50%;
+    line-height:38px;
+}
+header .icons span :last-child{
+    margin-right:-10px;
+}
+header .icons span:hover{
+    background: #f2f2f2;
+    color:black;
+}
+.calender ul{
+    display:flex;
+    list-style:none;
+    flex-wrap: wrap;
+    text-align:center;
+    /*padding:10px 20px 5px;*/
+}
+.calender ul li{
+    width:calc(100%/7);
+    position:relative;
+    /*padding:10px 20px 2px;*/
+}
+.calender{
+    padding:20px;
+}
+/*.calender ul.days{
+    margin:0 5px 15px;
+}*/
+.calender .weeks li{
+    font-weight:400;
+    font-size: 1.2rem;
+}
+.calender .days {
+    margin-bottom:20px;
+}
+.calender .days li{
+    margin-top:30px;
+    cursor:pointer;
+    z-index:1;
+}
+.days li.inactive{
+    color:#aaa;
+}
+.days li.active{
+    color:white;
+}
+.calender .days li::before{
+    position:absolute;
+    content:"";
+    height:40px;
+    width:40px;
+    top:50%;
+    z-index:-1;
+    left:50%;
+    border-radius: 50%;;
+    transform: translate(-50%,-50%);
+}
+.days li:hover::before{
+    background:#fee5e5;
+}
+.days li.active::before{
+    background:#fd9898;
+}
