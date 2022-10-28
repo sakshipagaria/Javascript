@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    min-height: 100vh;
+    background: url("./bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #060629;
+}
+.wrapper{
+    width: 450px;
+    background: #fff;
+    border-radius:10px;
+    height: 288px;
+    padding:30px;
+    transition:height 0.3s ease ;
+}
+.wrapper.active{
+    height: 538px;
+}
+.wrapper .upload-box{
+    height:225px;
+    border-radius: 6px;
+    display: flex;
+    cursor:pointer;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    border:2px dashed rgb(143, 143, 143);
+}
+.wrapper.active .upload-box {
+    border:none;
+
+}
+.upload-box p{
+    font-size: 1.2rem;
+    margin-top:10px;
+}
+.wrapper.active .upload-box p{
+    display:none;  
+}
+.wrapper.active .upload-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.wrapper .content{
+    opacity: 0;
+    margin-top:28px;
+    pointer-events: none;
+}
+.wrapper.active .content{
+    opacity: 1;
+    pointer-events:auto ;
+    transition: opacity 0.5s 0.05s ease;
+}
+.content .row{
+    display: flex;
+    justify-content: space-between;
+}
+.content .row .col{
+    width:calc(100% / 2 - 15px)
+}
+.row .col label{
+    font-size: 1.05rem;
+}
+.sizes .col input{
+    width:100%;
+    height:30px;
+    outline:none;
+    margin-top:7px;
+    border-radius:5px;
+    padding:0 15px;
+    border:1px solid #aaa;
+    font-size:1.05rem;
+}
+.sizes .col input:focus{
+    border:2px solid black;
+    padding:0 15px;
+}
+.content .checkboxes{
+    margin-top: 20px;
+}
+.checkboxes .col{
+    display:flex;
+    align-items:center;
+}
+.checkboxes .col input{
+    width:17px;
+    height:17px;
+    margin-right: 7px;
+    accent-color: #221d66;
+}
+.content .download-btn{
+    width:100%;
+    color:white;
+    background-color: #14145f;
+    border:none;
+    padding:15px;
+    justify-content: center;
+    margin: 20px 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    /*text-transform: uppercase;*/
+    font-size: 1.02rem;
+}
+.download-btn:hover{
+    background-color: #110f36;
+}
+.download-btn:focus{
+    background-color: grey;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Resizer | JS </title>
+    <link rel="stylesheet" href="rnci.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="upload-box">
+            <input type="file" accept="image/*" hidden>
+            <img src="upload.svg">
+            <p>Browse file to upload</p>
+        </div>
+        <div class="content">
+            <div class="row sizes">
+                <div class="col width">
+                    <label>Width</label>
+                    <input type="number">
+                </div>
+                <div class="col height">
+                    <label>Height</label>
+                    <input type="number">
+                </div>
+            </div>
+            <div class="row checkboxes">
+                <div class="col ratio">
+                    <input type="checkbox" id="ratio" checked>
+                    <label for="ratio">Lock aspect ratio</label>
+                </div>
+                <div class="col quality">
+                    <input type="checkbox" id="quality">
+                    <label for="quality">Reduce quality</label>
+                </div>
+            </div>
+            <button class="download-btn">Download Image!</button>
+        </div>
+    </div>
+    <script src="rnci.js"></script>
+</body>
+</html>
