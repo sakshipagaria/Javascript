@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Alef',sans-serif;
+}
+html{
+    height:100%;
+    font-size: 16px;
+}
+body{
+    background:url(./bckg.jpeg) ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-size: 20px;
+}
+.words {
+    max-width: 600px;
+    margin: 30px auto;
+    left:300px;
+    top:100px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.459);
+    padding: 1rem 2rem 1rem 5rem;
+    background:-webkit-gradient(linear, 0 0, 0 100%, from(#083751), color-stop(4%, rgb(255, 250, 250))) 0 4px;
+    background-size: 100% 2.2rem;
+    position: relative;
+    line-height: 2.2rem;
+}
+.words:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    top: 0;
+    left: 50px;
+    bottom: 0;
+    border: 1px solid;
+    border-color: transparent #c37c7c;
+}
+p{
+    margin:0 0 2.2rem;
+}
